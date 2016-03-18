@@ -1,5 +1,15 @@
 # Ember-cli-hearth
 
+_using:_
+
+```
+ember install makepanic/ember-cli-hearth
+ember hearth
+```
+
+
+# TODO: docs
+
 This README outlines the details of collaborating on this Ember addon.
 
 ## Installation

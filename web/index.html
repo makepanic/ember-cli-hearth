@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>EmberHearth</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    
+<meta name="ember-hearth/config/environment" content="%7B%22modulePrefix%22%3A%22ember-hearth%22%2C%22environment%22%3A%22production%22%2C%22baseURL%22%3A%22/%22%2C%22locationType%22%3A%22hash%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22ember-hearth%22%2C%22version%22%3A%220.0.0+65c2fb82%22%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
+<script>
+/* jshint browser: true */
+(function (window) {
+    if (window && window.process && window.process.type) {
+        window.ELECTRON = true;
+    }
+
+    window.requireNode = window.require;
+    window.moduleNode = window.module;
+    window.processNode = window.process;
+
+    delete window.process;
+    delete window.require;
+    delete window.module;
+})(this);
+
+</script>
+
+    <link rel="stylesheet" href="assets/vendor-b15983252936a2b41993120ac48f1e3a.css" integrity="sha256-vBwILmNP6tdpU/EOi2CFBkiRab0D/Z/Kw6yqy3PX+uk= sha512-AybedyJFGCYlONMg5r1C3qXiR+NnUQazuWSmwk7JSfvlEN3+rVGzKKdownkZxhsglkBKtfcTx/QzsqBPbiATbA==" >
+    <link rel="stylesheet" href="assets/ember-hearth-8a121079093c435b9301b5c781d14284.css" integrity="sha256-u1vPxXFbk29+7OizM2kxjZ++VjmzZoSq2ZrJnJOVQMw= sha512-R2WhgrHMnB1NlNJe1Tc54/ojT9MnJfWiNOhfI5a96qjMKPT1FCLW/i/otXo13aPv2753wI/Ggk9+rTzJprB+ig==" >
+
+    
+  </head>
+  <body>
+    
+
+    <script src="assets/vendor-313c28bfb511976188bbfad307621300.js" integrity="sha256-23zBayJPALDx1GT9FKT5YEIoxDZGZWrWElfrOkBnRGw= sha512-RDRa8d7pyxmEu7qL8wtY8OgIOda+aSKGYsg5Bu5GWddqnLO/vRnYOXLnu+dBckRAF+unx+Ybx2vAENJDg2KHbA==" ></script>
+    <script src="assets/ember-hearth-0fcd9fac8d070e6f62413de5aeb4ccb5.js" integrity="sha256-mpHOkX477G2A5DwZdTF/JwetRP9g3HpdxCIC9fn1yO4= sha512-6Yoi5liqB94dwQgxg3ptvds2XGtqo/WIxVkvq7QXMObRhxeT/Mko5DzT4LKI15ICvsLjYMqolMLpxVvI5sw4TQ==" ></script>
+
+    <script>
+/* jshint browser: true */
+(function (window) {
+    if (!window.ELECTRON) {
+        return;
+    }
+
+    // Restore Electron variables.
+    window.process = window.processNode;
+
+    // Redefine a global `require` function that can satisfy both
+    // Node and AMD module systems.
+    var requireAMD = window.require;
+    var requireNode = window.requireNode;
+
+    if (requireAMD) {
+        window.require = function () {
+            try {
+                return requireAMD.apply(null, arguments);
+            } catch (e) {
+                return requireNode.apply(null, arguments);
+            }
+        };
+    } else {
+        window.require = requireNode;
+    }
+})(this);
+
+</script>
+  </body>
+</html>

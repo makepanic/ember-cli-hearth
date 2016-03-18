@@ -43,7 +43,15 @@
     "ember-addon"
   ],
   "dependencies": {
-    "ember-cli-babel": "^5.1.5"
+    "bluebird": "^3.3.4",
+    "ember-cli-babel": "^5.1.5",
+    "escape-string-regexp": "^1.0.5",
+    "finalhandler": "^0.4.1",
+    "jsonminify": "^0.4.1",
+    "quick-temp": "^0.1.5",
+    "serve-static": "^1.10.2",
+    "temp": "^0.8.3",
+    "ws": "^1.0.1"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
